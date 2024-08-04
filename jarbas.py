@@ -81,7 +81,10 @@ def speak_message(message):
         print("The message is too long to be spoken directly.")
         if command_mode == 'voice':
             run_tts("The message is quite long. Do you want me to read it?")
-            response = recognize_speech().lower()
+            response = None
+            while response is None:
+                response = recognize_speech()
+            response = response.strip().lower()
             if response in ["yes", "sure", "go ahead"]:
                 run_tts("Okay, here it is:")
                 threading.Thread(target=run_tts, args=(message,)).start()
@@ -173,14 +176,14 @@ def start_chat():
             command = recognize_speech()
             if command is None:
                 continue
-            command = command.lower()
+            command = command.lower().strip()
         else:
             command = text_command_input()
 
         if command in ["exit", "quit"]:
             speak_message(f"Goodbye, {user_name}.")
             return
-        if command.startswith("search for"):
+        if command.startswith("search"):
             query = command[10:].strip()
             search_result = brave_search(query)
             speak_message(search_result)
