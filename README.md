@@ -70,7 +70,7 @@ python jarbas.py
 ```
 Interact with the assistant using voice commands or text input based on your configuration.
 
-### Voice Configuration (Upcoming)
+### Voice Configuration
 The voices.txt file should list the available voices in the following format:
 ```php
 <Voice id=English (America)
@@ -80,6 +80,9 @@ The voices.txt file should list the available voices in the following format:
       age=None>
 ```      
 Make sure the voice specified in the config.json ("voice": "English (America)") matches one of the voices listed in voices.txt.
+
+### Multilanguage support (Upcoming)
+...
 
 ### Commands
 - Voice Command Mode: Speak your command clearly after the assistant prompts you.
