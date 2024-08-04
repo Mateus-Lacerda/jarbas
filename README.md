@@ -1,6 +1,6 @@
 # Personal Assistant Jarbas
 
-Jarbas is a personal assistant built with Python that can interact with you via voice commands or text input. This assistant can perform web searches, summarize texts, and respond to various commands using a local language model.
+Jarbas is a personal assistant built with Python that can interact with you via voice commands or text input. This assistant can perform web searches, summarize texts, respond to various commands and generate, execute and debug code using a local language model.
 
 ## Features
 
