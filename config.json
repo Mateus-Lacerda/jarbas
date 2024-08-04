@@ -1,0 +1,14 @@
+{
+    "bot_name": "Jarbas",
+    "user_name": "Master Mateus",
+    "voice": "English (America)",
+    "speech_rate": 160,
+    "model": "openai/llama3",
+    "api_key": "ollama",
+    "api_base": "http://localhost:11434/v1",
+    "context_window": 3000,
+    "max_tokens": 300,
+    "command_mode": "voice",
+    "max_speak_length": 200,
+    "language": "en-US"
+}

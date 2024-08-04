@@ -1,0 +1,7 @@
+requests
+pyttsx3
+demoji
+beautifulsoup4
+speechrecognition
+sounddevice
+open-interpreter
