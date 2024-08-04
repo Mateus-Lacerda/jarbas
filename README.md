@@ -14,7 +14,7 @@ Jarbas is a personal assistant built with Python that can interact with you via 
 
 ### Prerequisites
 
-- Python 3.7 or higher
+- Python <3.9 and <3.12
 - Required Python packages:
   - `requests`
   - `pyttsx3`
