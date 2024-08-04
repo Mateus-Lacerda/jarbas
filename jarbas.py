@@ -70,7 +70,7 @@ def speak_message(message):
     # Remove any other code-like text (inline code)
     message = re.sub(r'`[^`]*`', '', message)
     # Remove special characters from the message
-    message = re.sub(r'[^A-Za-z0-9\s]', '', message)
+    message = message.replace("#", "").replace("*", "").replace("_", "").replace("-", "").replace("~", "")
 
     def run_tts(text):
         with tts_lock:
