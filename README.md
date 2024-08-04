@@ -37,6 +37,7 @@ Jarbas is a personal assistant built with Python that can interact with you via 
     pip install -r requirements.txt
     ```
 4. Ensure you have the `voices.txt` file in the same directory as the script. This file should list the available voices.
+\* Optional: If you don't want to pay for a llm model, you might consider installing Ollama, or LMStudio, to keep Jarbas private and local 
 
 ### Configuration
 
