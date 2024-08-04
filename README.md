@@ -1,6 +1,6 @@
 # Personal Assistant Jarbas
 
-Jarbas is a personal assistant built with Python that can interact with you via voice commands or text input. This assistant can perform web searches, summarize texts, and respond to various commands using a local language model.
+Jarbas is a personal assistant built with Python that can interact with you via voice commands or text input. This assistant can perform web searches, summarize texts, respond to various commands and generate, execute and debug code using a local language model.
 
 ## Features
 
@@ -14,7 +14,7 @@ Jarbas is a personal assistant built with Python that can interact with you via 
 
 ### Prerequisites
 
-- Python 3.7 or higher
+- Python <3.9 and >3.12
 - Required Python packages:
   - `requests`
   - `pyttsx3`
@@ -36,7 +36,9 @@ Jarbas is a personal assistant built with Python that can interact with you via 
     ```sh
     pip install -r requirements.txt
     ```
-4. Ensure you have the `voices.txt` file in the same directory as the script. This file should list the available voices.
+4. Ensure you have the `voices.txt` file in the same directory as the script. This file should list the available voices. \
+   
+\* Optional: If you don't want to pay for a llm model, you might consider installing Ollama, or LMStudio, to keep Jarbas private and local 
 
 ### Configuration
 
@@ -68,7 +70,7 @@ python jarbas.py
 ```
 Interact with the assistant using voice commands or text input based on your configuration.
 
-### Voice Configuration (Upcoming)
+### Voice Configuration
 The voices.txt file should list the available voices in the following format:
 ```php
 <Voice id=English (America)
@@ -78,6 +80,9 @@ The voices.txt file should list the available voices in the following format:
       age=None>
 ```      
 Make sure the voice specified in the config.json ("voice": "English (America)") matches one of the voices listed in voices.txt.
+
+### Multilanguage support (Upcoming)
+...
 
 ### Commands
 - Voice Command Mode: Speak your command clearly after the assistant prompts you.
